@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*{
+    text-wrap: wrap;
+}
+
+.wrapper{
+    min-height: calc(100vh - 12rem);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.main_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text_wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.header_text{
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.header_text span{
+    font-weight: bold;
+    letter-spacing: normal;
+}
+
+.example_text{
+    font-size: 2.4rem;
+    color: rgb(138, 138, 138);
+}
+.img_wrapper{
+    width: max-content;
+}
+.img_wrapper img{
+    width: 20rem;
+}
+
+.stats_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.git_stats{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.git_stat{
+    display: flex;
+    gap: 1rem;
+}
+.git_icon{
+    font-size: 1.7rem;
+    /* margin-top: 5px; */
+    color: rgb(138, 138, 138);
+}
+.git_Rwrapper{
+    display: flex;
+    flex-direction: column;
+}
+.git_count{
+    font-size: 2rem;
+}
+.git_stat_name{
+    color: rgb(138, 138, 138);
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+}
+
+.git_logo{
+    color: rgb(164, 169, 184);
+    font-size: 3rem;
+}
+
+.footer{
+    height: 2rem;
+    background-color: orange;
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    .wrapper{
+        padding: 2rem;
+    }
+    .header_text{
+        font-size: 2.2rem;
+    }
+    .example_text{
+        font-size: 1.5rem;
+    }
+    .stats_wrapper{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .git_stats{
+        gap: 1rem;
+    }
+}
